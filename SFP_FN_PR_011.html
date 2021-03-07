@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<!--[if IE 9]><html class="no-js lt-ie10"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html lang="ko">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv='X-UA-Compatible' content='IE=edge, chrome=1'>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="">
+	<title>FAQ | Hanwha Smart FP</title>
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/layout.css">
+	<link rel="stylesheet" type="text/css" href="css/sub.css">
+	<script type="text/javascript" src="js/libs/jquery-1.12.0.min.js"></script>
+	<script type="text/javascript" src="js/libs/jquery-ui-1.12.1.min.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+
+    <script type="text/javascript">
+        $(function() {
+            $('.faq-box').on('click','.faq-list',function(){
+                var row = $(this);
+                if (row.find('.answer').is(':animated')) {
+                    return false;
+                }
+                if (row.hasClass('active')){
+                    row.removeClass('active').find('.answer').slideUp();
+                } else {
+                    row.addClass('active').find('.answer').slideDown();
+                    row.siblings('.active').removeClass('active').find('.answer').slideUp()
+                }
+                return false;
+            });
+        });
+    </script>
+</head>
+<body>
+	<!--[if lt IE 9]>
+	<div id="ie-version"><p>고객님께서는 현재 Explorer 구형버전으로 접속 중이십니다. 이 사이트는 Explorer 최신버전에 최적화 되어 있습니다. <a href="http://windows.microsoft.com/ko-kr/internet-explorer/download-ie" target="_blank">Explorer 업그레이드 하기</a></p> <button type="button" class="version-close">X</button></div>
+	<![endif]-->
+	<!-- skip navi -->
+	<ul class="skip-nav">
+		<li><a href="#contents">본문 바로가기</a></li>
+		<li><a href="#gnb">메뉴 바로가기</a></li>
+	</ul>
+	<!-- //skip navi -->
+
+	<!-- wrap -->
+	<div id="wrap">
+		<!-- header -->
+		<header class="header">
+			<!-- top_wrap -->
+			<div class="inner">
+				<h1 class="logo">
+					<i class="ip-icon-logo"></i>
+					<span class="text-ir">Hanwha Smart FP</span>
+				</h1>
+				<nav id="gnb">
+					<ul class="category">
+						<li><a href="#">Smart FP 소개</a></li>
+						<li><a href="#">활동 안내</a></li>
+						<li><a href="#">교육지원</a></li>
+						<li><a href="#">업무지원</a></li>
+					</ul>
+					<a href="#" class="btn-application"><span>온라인지원</span></a>
+					<a href="javascript:void(0)" class="trigger">
+						<i class="ip-icon-menu-trigger"></i>
+						<span class="text-ir">메뉴 열기</span>
+					</a>
+					<div class="inner">
+						<div class="overlay"></div>
+						<div class="display">
+							<div class="panel">
+								<ul class="dp1">
+									<li>
+										<a href="#">
+											<strong class="text"><span class="n-square">Smart FP</span> <span>소개</span></strong>
+											<i class="icon-more"></i>
+										</a>
+										<ul class="dp2 tup">
+											<li><a href="#"><span class="text n-square">About</span></a></li>
+											<li><a href="#"><span class="text">수수료 안내</span></a></li>
+											<li><a href="#"><span class="text">회사지원사항</span></a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">
+											<strong class="text">활동 안내</strong>
+											<i class="icon-more"></i>
+										</a>
+										<ul class="dp2">
+											<li><a href="#"><span class="text">Smart FP 서비스</span></a></li>
+											<li><a href="#"><span class="text tup">활동 <span class="n-square">Tool</span></span></a></li>
+											<li><a href="#"><span class="text tup">상품 <span class="n-square">Line-up</span></span></a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">
+											<strong class="text">교육지원</strong>
+											<i class="icon-more"></i>
+										</a>
+										<ul class="dp2">
+											<li><a href="#" class="text"><span>교육커리큘럼</span></a></li>
+											<li><a href="#" class="text"><span>교육지원 사이트</span></a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">
+											<strong class="text">업무지원</strong>
+											<i class="icon-more"></i>
+										</a>
+										<ul class="dp2 tup">
+											<li><a href="#" class="text"><span class="n-square">FAQ</span></a></li>
+											<li><a href="#" class="text"><span class="n-square">Q&A</span></a></li>
+                                            <li><a href="#" class="text"><span class="n-square">자료게시판</span></a></li>
+											<li><a href="#" class="text"><span class="n-square">공지사항</span></a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+                            <a href="#" class="btn-login">
+								<span><span class="n-square">Smart FP </span>로그인</span>
+								<!-- <i class="ip-icon-link-arrow"></i> -->
+							</a>
+							<a href="javascript:void(0)" class="close">
+								<i class="ip-icon-menu-close"></i>
+								<span class="text-ir">메뉴 닫기</span>
+							</a>
+						</div>
+					</div>
+				</nav>
+			</div>
+			<!-- //top_wrap -->
+		</header>
+		<!-- //header -->
+
+		<!-- contents -->
+		<div id="contents" class="sub about">
+			<!-- sub_cont -->
+			<div class="page-top">
+				<h2 class="title">업무지원</h2>
+				<div class="slogan n-square">
+					<i class="ip-icon-page-quote-start"></i>
+					<p class="text">Help Desk</p>
+					<i class="ip-icon-page-quote-end"></i>
+				</div>
+				<div class="breadcrumb">
+					<a href="#" title="메인화면으로 이동" class="tup n-square">Home</a>
+					<span>업무지원</span>
+					<span class="n-square">FAQ</span>
+				</div>
+			</div>
+			<hr class="v-middle-line">
+			<div class="page-visual sub-title-bg-gray noti-title">
+				<div class="inner">
+					<div class="background"></div>
+					<div class="contents">
+						<p class="highlight n-square"><span class="t-org">F</span>requently <span class="t-org">A</span>sked <span class="t-org">Q</span>uestions</p>
+						<p class="text">
+							<span class="subline">자주하는 질문을 확인해보세요<span class="text-dotte">.</span></span>
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- search box -->
+			<div class="search-box">
+				<form action="" id="" name="" method="">
+					<fieldset>
+						<legend>자주하는 질문 검색</legend>
+						<div class="input-wrap">
+                            <div class="input-group">
+    							<input type="text" id="" name="" title="" readonly="readonly" class="i-datepicker n-square" />
+    							<span class="space1">-</span>
+    							<input type="text" id="" name="" title="" readonly="readonly" class="i-datepicker n-square" />
+    							<span class="space2"></span>
+                                <span class="space3"></span>
+    							<input type="text" id="" name="" title="검색어를 입력해주세요." placeholder="검색어를 입력해주세요." class="input-txt" />
+                            </div>
+							<button class="btn">검색</button>
+						</div>
+					</fieldset>
+				</form>
+			</div>
+			<!-- //search box -->
+
+			<div class="tab-box">
+				<div class="inner">
+					<a href="javascript:void(0)" class="trigger">
+						<span>전체</span>
+					</a>
+					<ul class="list">
+						<li class="active"><a href="javascript:void(0)">전체</a></li>
+						<li><a href="javascript:void(0)">온라인지원</a></li>
+						<li><a href="javascript:void(0)">Smart FP</a></li>
+						<li><a href="javascript:void(0)">스마트플래너</a></li>
+						<li><a href="javascript:void(0)">수수료</a></li>
+						<li><a href="javascript:void(0)">기타</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="faq-box">
+				<ul class="faq">
+					<li class="faq-title">
+						<ul>
+							<li>번호</li>
+							<li>카테고리</li>
+							<li>제목</li>
+						</ul>
+					</li>
+					<li class="faq-list">
+						<ul>
+							<li>10</li>
+							<li>온라인지원</li>
+							<li>
+								<a href="#">
+									<span>지원서 작성 시, 사진 등록은 필수인가요?</span>
+									<i class="ip-icon-arrow"></i>
+								</a>
+							</li>
+						</ul>
+						<div class="answer">
+							사진등록은 필수입니다. 3x4 증명사진을 기본으로 하고 있으며 증명사진 촬영이 어려우신 분은 휴대폰 카메라로 촬영해서 올려 주셔도 됩니다. <br />
+							단, 과한 포토샵 보정이 들어간 사진이거나 얼짱각도 등의 얼굴의 변형을 일으키는 사진인 경우에는 지원 검토 시 불합격 될 수 있으니 자제 부탁드립니다. <br />
+							얼굴의 정면사진을 업로드해주세요.<br />
+						</div>
+					</li>
+					<li class="faq-list">
+						<ul>
+							<li>9</li>
+							<li>기타</li>
+							<li>
+								<a href="#">
+									<span>개인정보를 수정하고 싶습니다. 어떻게 해야 하나요?</span>
+									<i class="ip-icon-arrow"></i>
+								</a>
+							</li>
+						</ul>
+						<div class="answer">
+							답변
+						</div>
+					</li>
+					<li class="faq-list">
+						<ul>
+							<li>8</li>
+							<li>지원서</li>
+							<li>
+								<a href="#">
+									<span>증명사진 업로드가 안되요. 어떻게하나요?</span>
+									<i class="ip-icon-arrow"></i>
+								</a>
+							</li>
+						</ul>
+						<div class="answer">
+							답변
+						</div>
+					</li>
+					<li class="faq-list">
+						<ul>
+							<li>7</li>
+							<li>기타</li>
+							<li>
+								<a href="#">
+									사이트 접속이 안되요.
+									<i class="ip-icon-arrow"></i>
+								</a>
+							</li>
+						</ul>
+						<div class="answer">
+							답변
+						</div>
+					</li>
+					<li class="faq-list">
+						<ul>
+							<li>6</li>
+							<li>스마트플래너</li>
+							<li>
+								<a href="#">
+									Smart FP는 어떤 일을 하나요?
+									<i class="ip-icon-arrow"></i>
+								</a>
+							</li>
+						</ul>
+						<div class="answer">
+							답변
+						</div>
+					</li>
+					<li class="faq-list">
+						<ul>
+							<li>5</li>
+							<li>기타</li>
+							<li>
+								<a href="#">
+									다른 사람의 이름으로 이메일이 옵니다. 어떻게 해야 하나요?
+									<i class="ip-icon-arrow"></i>
+								</a>
+							</li>
+						</ul>
+						<div class="answer">
+							답변
+						</div>
+					</li>
+					<li class="faq-list">
+						<ul>
+							<li>4</li>
+							<li>기타</li>
+							<li>
+								<a href="#">
+									입사지원이 안되요.
+									<i class="ip-icon-arrow"></i>
+								</a>
+							</li>
+						</ul>
+						<div class="answer">
+							답변
+						</div>
+					</li>
+					<li class="faq-list">
+						<ul>
+							<li>3</li>
+							<li>수수료</li>
+							<li>
+								<a href="#">
+									한 건당 수수료는 얼마인가요?
+									<i class="ip-icon-arrow"></i>
+								</a>
+							</li>
+						</ul>
+						<div class="answer">
+							답변
+						</div>
+					</li>
+					<li class="faq-list">
+						<ul>
+							<li>2</li>
+							<li>Smart FP</li>
+							<li>
+								<a href="#">
+									투잡이 가능한가요?
+									<i class="ip-icon-arrow"></i>
+								</a>
+							</li>
+						</ul>
+						<div class="answer">
+							답변
+						</div>
+					</li>
+					<li class="faq-list">
+						<ul>
+							<li>1</li>
+							<li>기타</li>
+							<li>
+								<a href="#">
+									보험을 판매하나요?
+									<i class="ip-icon-arrow"></i>
+								</a>
+							</li>
+						</ul>
+						<div class="answer">
+							답변
+						</div>
+					</li>
+                    <!-- 등록된 게시물이 없습니다 -->
+                    <li class="faq-list">
+                        <div class="faq-msg">
+                            <p class="message">
+                                <i class="ip-icon-msg"></i>
+                                <span class="txt">등록된 게시물이 없습니다.</span>
+                            </p>
+                        </div>
+					</li>
+                    <!-- //등록된 게시물이 없습니다 -->
+				</ul>
+			</div>
+
+			<!-- paging pc -->
+			<div class="pagination pc n-square">
+				<a href="" class="first"><i class="ip-icon-arr"></i><span class="blind">처음</span></a>
+				<a href="" class="prev"><i class="ip-icon-arr"></i><span class="blind">이전</span></a>
+				<strong class="num current" title="현재페이지"><span>1</span></strong>
+				<a href="" class="num">2</a>
+				<a href="" class="num">3</a>
+				<a href="" class="num">4</a>
+				<a href="" class="next"><i class="ip-icon-arr"></i><span class="blind">다음</span></a>
+				<a href="" class="last"><i class="ip-icon-arr"></i><span class="blind">끝</span></a>
+			</div>
+			<!-- //paging -->
+
+			<!-- paging mobile -->
+			<div class="pagination mo n-square">
+				<a href="" class="prev"><i class="ip-icon-arr"></i><span class="blind">이전</span></a>
+				<strong class="num current" title="현재페이지"><span>1</span></strong>
+				<span class="space3">/</span>
+				<a href="" class="num end">100</a>
+				<a href="" class="next"><i class="ip-icon-arr"></i><span class="blind">다음</span></a>
+			</div>
+			<!-- //paging -->
+			<!-- //sub_cont -->
+
+		</div>
+		<!-- //contents -->
+
+		<!-- footer -->
+		<footer class="footer">
+			<div class="aside">
+				<a href="javascript:void(0)" class="btn-go2top">
+					<i class="ip-icon-go2top"></i>
+					<span class="text-ir">맨 위로</span>
+				</a>
+			</div>
+			<div class="inner">
+				<div class="util">
+					<ul class="links">
+						<li><a href="#">이용약관</a></li>
+						<li><a href="#">개인정보취급방침</a></li>
+					</ul>
+				</div>
+				<dl class="info">
+					<dt class="ceo">대표이사</dt><dd class="ceo">차남규</dd>
+					<dt class="phone">대표전화</dt><dd class="phone">1588-6363</dd>
+					<dt class="address text-ir">주소</dt><dd class="address">서울시 영등포구 63로 50 (여의도동, 63 한화생명빌딩)</dd>
+					<dt class="company text-ir">상호</dt><dd class="company">한화생명보험 주식회사</dd>
+				</dl>
+				<p class="copy">&copy; HANWHALIFE. ALL RIGHTS RESERVED.</p>
+			</div>
+		</footer>
+		<!-- //footer -->
+	</div>
+	<!-- //wrap -->
+</body>
+</html>
