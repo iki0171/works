@@ -1,0 +1,17 @@
+삼성본병원
+http://samsungbon.com/
+
+css 셀렉터
+https://www.w3schools.com/cssref/css_selectors.asp
+
+특수문자 기호표
+https://www.digitalmediaminute.com/reference/entity/index.php
+https://css-tricks.com/snippets/html/glyphs
+
+퍼블리싱 참고
+http://webclub.tistory.com/234?category=541913
+
+제이쿼리 셀렉터
+https://zetawiki.com/wiki/JQuery_%EC%85%80%EB%A0%89%ED%84%B0
+http://codylindley.com/jqueryselectors/
+https://www.slideshare.net/yakuball/jquery-29167814?next_slideshow=1
