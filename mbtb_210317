@@ -1,0 +1,59 @@
+=======
+깃허브사용법
+=======
+
+git 명령어
+https://reddb.tistory.com/147?category=948284
+------------------------------------------------------------------
+cmd 실행
+
+cd mg-tb		// 해당폴더에 들어가기
+
+git init 입력
+
+git remote -v	// 원격저장소 확인
+
+git pull	// 파일 내려받기
+
+git status
+
+// 상태확인
+// On branch master: 현재 마스터 브랜치가 존재
+// No commits yet: 아직 커밋한 파일 없음
+// nothing to commit: 현재 커밋할 파일 없음
+// Changes to be committed: 변화된 내용이 출력
+// new file: 스테이지에 올라간 상태
+// nothing to commit, working tree clean: 커밋할 파일없고, 작업트리고 깨끗함
+
+
+git add 파일명	// 단일파일 업로드
+또는
+git add .	// 모든파일 업로드
+
+git commit -m "메모"
+
+git commit -am "메모" 	// git add와 git commit 을  동시에 하는 방법
+
+git push	// git push -u origin main
+
+
+
+
+
+git log	// 커밋한 버전을 확인
+
+git diff	// 커밋되어있는 파일과 수정한 파일을 비교
+
+git restore 파일명	// 수정된 파일을 취소(복구)함
+
+ 
+ 
+VSCode 동기화
+https://okayoon.tistory.com/entry/%ED%9A%8C%EC%82%AC%EC%97%90%EC%84%9C-%EC%93%B0%EB%8D%98-%ED%99%98%EA%B2%BD-%EA%B7%B8%EB%8C%80%EB%A1%9C-VSCode-%EB%8F%99%EA%B8%B0%ED%99%94%ED%95%98%EA%B8%B0gistsettings-sync-%EC%84%A4%EC%A0%95-%EB%8F%99%EA%B8%B0%ED%99%94
+
+https://k0102575.github.io/articles/2020-04/settings-sync
+
+
+포토샵 계정
+jewelle@naver.com
+PCC_adnstyle
