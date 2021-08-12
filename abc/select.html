@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <title>Document</title>
+    <style type="text/css">
+    .select_box + .select_box { margin-top: 20px; }
+    select { width: 200px; margin: 0; padding: 8px; border: 1px solid #dfe2e6; }
+    select.data { color: red; }
+    select option { color: #333; }
+    select option[data-hold="Y"] { color: red; }
+    /* select:invalid { color: red; } */
+
+    /* 공지사항 */
+    .main-notice {padding:94px 40px 110px 39px;overflow:hidden;}
+    .main-notice > .inner {margin:0 auto;max-width:1201px;}
+    .main-notice > .inner .title {margin-bottom:48px;font-size:19px;font-weight:800;line-height:30px;letter-spacing:-.02em;color:#000;}
+    .main-notice .last-notice {}
+    .main-notice .last-notice .info {position:relative;padding-top:39px;}
+    .main-notice .last-notice .subject {font-size:32px;font-weight:400;line-height:46px;letter-spacing:-.05em;color:#000;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;}
+    .main-notice .last-notice .date {position:absolute;top:0;left:0;}
+    .main-notice .last-notice .date [class*="ip-icon-"] {margin:3px 5px 3px 0;vertical-align:top;}
+    .main-notice .last-notice .date .text {display:inline-block;font-size:13px;font-weight:400;line-height:20px;letter-spacing:-.025em;vertical-align:top;}
+    .main-notice .last-notice .contents {margin-top:5px;font-size:15px;font-weight:300;line-height:25px;color:#666;white-space:pre-line;}
+    .main-notice .latest-notice {margin:55px -40px 0 -39px;padding:0 40px;}
+    .main-notice .latest-notice > .display {display:table;width:100%;min-width:935px;table-layout:fixed;}
+    .main-notice .latest-notice .panel {display:table-cell;}
+    .main-notice .latest-notice .panel > .inner {display:block;position:relative;padding:40px 40px 72px 40px;height:302px;}
+    .main-notice .latest-notice .info {position:relative;padding-top:40px;}
+    .main-notice .latest-notice .subject {font-size:18px;font-weight:400;line-height:26px;letter-spacing:-.025em;color:#000;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;}
+    .main-notice .latest-notice .date {position:absolute;top:0;left:0;}
+    .main-notice .latest-notice .date .text {display:inline-block;font-size:12px;font-weight:400;line-height:20px;letter-spacing:-.025em;vertical-align:top;}
+    .main-notice .latest-notice .contents {margin-top:11px;font-size:13px;font-weight:300;letter-spacing:-.025em;color:#666;overflow:hidden;word-wrap:break-word; white-space:normal; text-overflow:ellipsis; line-height:1.8; height:5.4em;-webkit-line-clamp:3; -webkit-box-orient:vertical;display:-webkit-box;}
+    .main-notice .latest-notice .detail-link {display:block;position:absolute;bottom:48px;left:40px;padding:8px 0 0;font-size:12px;font-weight:600;line-height:14px;letter-spacing:-.025em;color:#bfbfbf;transition:color 150ms;-webkit-transition:color 150ms;}
+    .main-notice .latest-notice .detail-link::before {content:'';display:block;position:absolute;top:0;width:6px;height:6px;border-radius:50%;background-color:#fb6533;opacity:0;transition:opacity 150ms;-webkit-transition:opacity 150ms;}
+    .main-notice .latest-notice .detail-link::after {content:'';display:block;position:absolute;bottom:0;width:100%;height:1px;background-color:#fb6533;opacity:0;transition:opacity 150ms;-webkit-transition:opacity 150ms;}
+    .noios .main-notice .latest-notice a:hover .detail-link {color:#fb6533;}
+    .noios .main-notice .latest-notice a:hover .detail-link::before {opacity:1;}
+    .noios .main-notice .latest-notice a:hover .detail-link::after {opacity:1;}
+    .main-notice .latest-notice [class*="deco-line-"] {display:block;position:absolute;background-color:#ccc;}
+    .main-notice .latest-notice .deco-line-top {top:0;left:40px;right:0;height:1px;}
+    .main-notice .latest-notice .deco-line-right {top:0;right:0;bottom:0;width:1px;}
+    .main-notice .latest-notice .deco-line-bottom {bottom:0;left:40px;right:40px;height:1px;}
+    .main-notice .latest-notice .deco-line-left {top:0;left:-1px;bottom:0;width:1px;}
+    .main-notice .btn-more {display:block;margin:60px auto 0;padding:12px 0;width:201px;height:50px;font-size:13px;font-weight:600;line-height:24px;letter-spacing:-.02em;color:#666;text-align:center;border:1px solid #d9d9d9;}
+    </style>
+    <script type="text/javascript">
+        $(function() {
+            $("select").change(function() {
+            	$(this).removeClass("data");
+            	
+            	if($(this).find("option:selected").attr("data-hold") == "Y"){
+            		$(this).addClass("data");
+            	}
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="box_type3">
+        <p class="title">카드선택</p>
+        <p class="txt">발급 받으실 카드를 선택해주세요.</p>
+        <div class="select_box">
+            <select name="" id="">
+                <option value="">선택</option>
+                <option value="" data-hold="Y">삼성카드:보유카드</option>
+                <option value="">현대카드</option>
+                <option value="">KB국민카드</option>
+                <option value="" data-hold="Y">우리카드:보유카드</option>
+            </select>
+        </div>
+        <!-- <div class="select_box">
+            <select name="" id="" class="data">
+                <option value="">선택</option>
+                <option value="" data-hold="Y">삼성카드:보유카드</option>
+                <option value="">현대카드</option>
+                <option value="">KB국민카드</option>
+                <option value="" data-hold="Y">우리카드:보유카드</option>
+            </select>
+        </div> -->
+    </div>
+
+
+    <table>
+        <caption></caption>
+        <colgroup>
+            <col width="20%">
+            <col width="*">
+        </colgroup>
+        <tbody>
+            <tr>
+                <th></th>
+                <td></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table>
+        <caption></caption>
+        <colgroup>
+            <col width="20%">
+            <col width="*">
+        </colgroup>
+        <tbody>
+            <tr>
+                <th>수집·이용 목적</th>
+                <td>
+                    <ul class="dott_list">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>수집·이용할 항목</th>
+                <td>
+                    <span>[필수정보]</span>
+                    <ul class="dott_list mar_t3">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <p><strong>※ 본 동의 이전에 발생한 개인정보도 포함됩니다.</strong></p>
+                </td>
+            </tr>
+            <tr>
+                <th></th>
+                <td></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <ul class="ol_l_list mar_t3">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+    <div class="main-notice">
+        <div class="inner">
+            <h2 class="title n-square">Notice</h2>
+            <div class="last-notice">
+                <a href="#">
+                    <dl class="info">
+                        <dt class="subject">한화 Smart FP와 함께하는 서울세계불꽃축제 2018 최고의 명당! 우수 Smart FP 50명 추첨 이벤트</dt>
+                        <dd class="date n-square">
+                            <i class="ip-icon-notice-mute"></i>
+                            <span class="text">2018.09.14</span>
+                        </dd>
+                        <dd class="contents">7월 27일부터 8월 26일까지 진행되는 응원 메시지 이벤트는 8월 20일 현재 69,770Wh로 당초 계획한 목표치를 훨씬 상회하고 있다.
+                            응원 메시지에는 지구의 미래와 환경, 그리고 우리 아이들의 미래를 생각하는 내용이 많았다.
+                        </dd>
+                    </dl>
+                </a>
+            </div>
+            <div class="latest-notice swiper-container">
+                <div class="display swiper-wrapper">
+                    <div class="panel swiper-slide">
+                        <a href="#" class="inner">
+                            <dl class="info">
+                                <dt class="subject">한화 Smart FP와 함께하는 서울세계불꽃축제 2018 최고의 명당! 우수 Smart FP 50명 추첨 이벤트</dt>
+                                <dd class="date n-square">
+                                    <span class="text">2018.09.14</span>
+                                </dd>
+                                <dd class="contents">7월 27일부터 8월 26일까지 진행되는 응원 메시지 이벤트는 8월 20일 현재 69,770Wh로 당초 계획한 목표치를 훨씬 상회하고 있다.
+                                    응원 메시지에는 지구의 미래와 환경, 그리고 우리 아이들의 미래를 생각하는 내용이 많았다.
+                                </dd>
+                            </dl>
+                            <span class="detail-link">자세히보기</span>
+                        </a>
+                        <span class="deco-line-top"></span>
+                        <span class="deco-line-right"></span>
+                        <span class="deco-line-bottom"></span>
+                        <span class="deco-line-left"></span>
+                    </div>
+                    <div class="panel swiper-slide">
+                        <a href="#" class="inner">
+                            <dl class="info">
+                                <dt class="subject">한화 Smart FP와 함께하는 서울세계불꽃축제 2018 최고의 명당! 우수 Smart FP 50명 추첨 이벤트</dt>
+                                <dd class="date n-square">
+                                    <span class="text">2018.09.14</span>
+                                </dd>
+                                <dd class="contents">7월 27일부터 8월 26일까지 진행되는 응원 메시지 이벤트는 8월 20일 현재 69,770Wh로 당초 계획한 목표치를 훨씬 상회하고 있다.
+                                    응원 메시지에는 지구의 미래와 환경, 그리고 우리 아이들의 미래를 생각하는 내용이 많았다.
+                                </dd>
+                            </dl>
+                            <span class="detail-link">자세히보기</span>
+                        </a>
+                        <span class="deco-line-top"></span>
+                        <span class="deco-line-right"></span>
+                        <span class="deco-line-bottom"></span>
+                        <span class="deco-line-left"></span>
+                    </div>
+                    <div class="panel swiper-slide">
+                        <a href="#" class="inner">
+                            <dl class="info">
+                                <dt class="subject">한화 Smart FP와 함께하는 서울세계불꽃축제 2018 최고의 명당! 우수 Smart FP 50명 추첨 이벤트</dt>
+                                <dd class="date n-square">
+                                    <span class="text">2018.09.14</span>
+                                </dd>
+                                <dd class="contents">7월 27일부터 8월 26일까지 진행되는 응원 메시지 이벤트는 8월 20일 현재 69,770Wh로 당초 계획한 목표치를 훨씬 상회하고 있다.
+                                    응원 메시지에는 지구의 미래와 환경, 그리고 우리 아이들의 미래를 생각하는 내용이 많았다.지 이벤트는 8월 20일 현재 69,770Wh로 당초 계획한 목표치를 훨씬 상회하고 있다.
+                                        응원 메시지에는 지구의 미래와 환경, 그리고 우리 아이들의 미래를 생각하는 내용이 많았다.
+                                </dd>
+                            </dl>
+                            <span class="detail-link">자세히보기</span>
+                        </a>
+                        <span class="deco-line-top"></span>
+                        <span class="deco-line-right"></span>
+                        <span class="deco-line-bottom"></span>
+                        <span class="deco-line-left"></span>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn-more">더보기</a>
+        </div>
+    </div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+-------------------------------
+해상도 비교
+
+상태바 있을 경우
+S6 - 1334*728
+S7 - 1205*681
+
+상태바 없을 경우
+S6 - 1334*800
+S7 - 1205*753
+-------------------------------
+
+
+VSCode 동기화
+https://okayoon.tistory.com/entry/%ED%9A%8C%EC%82%AC%EC%97%90%EC%84%9C-%EC%93%B0%EB%8D%98-%ED%99%98%EA%B2%BD-%EA%B7%B8%EB%8C%80%EB%A1%9C-VSCode-%EB%8F%99%EA%B8%B0%ED%99%94%ED%95%98%EA%B8%B0gistsettings-sync-%EC%84%A4%EC%A0%95-%EB%8F%99%EA%B8%B0%ED%99%94
+
+https://k0102575.github.io/articles/2020-04/settings-sync
+
+
+알메이트 그리드솔루션
+데모버전 보기
+http://riamore.net/component/dataGrid.html
+
+
+포토샵 계정
+jewelle@naver.com
+PCC_adnstyle
+
+제플린
+
+
+                    <!-- <div class="guid_finish">
+                        <i class="img_com"></i>
+                        <p><em class="color7">김금고님</em> 성공적으로 처리되었습니다.</p>
+                        <span class="txt1">성공적으로 처리되었습니다.</span>
+                        <span class="txt2">성공적으로 처리되었습니다.</span>
+                    </div> -->
+
+
+/* 신청결과 */
+.guid_finish { position: relative; margin: 35px 0 40px; padding: 0 180px; text-align: center; word-break: keep-all; }
+.guid_finish > .img_com { display: block; margin: 0 auto; width: 81px; height: 81px; background-position: -180px -200px; }
+.guid_finish > p { line-height: 40px; margin: 15px 0 5px; color: #222; font-size: 28px; }
+.guid_finish > span { display: block; font-family: "Barun"; font-weight: 100; }
+.guid_finish > .txt1 { margin-bottom: 20px; color: #999; font-size: 13px; }
+.guid_finish > .txt2 { color: #000; font-size: 14px; }
+.guid_finish.up_result .img_com { width: 60px; height: 60px; background-position: 0 -140px; }
+.guid_finish ul { width: 90%; margin: 0 auto; padding: 20px; border-radius: 5px; background: #f3f3f3; }
+.guid_finish ul > li { position: relative; line-height: 18px; padding-left: 10px; text-align: left; font-family: "barun"; }
+.guid_finish ul > li:before { content: ''; display: inline-block; position: absolute; top: 6px; left:0; width: 3px; height: 3px; border-radius: 50%; background: #aaa; }
+.guid_finish ul > li + li { margin-top: 5px; }

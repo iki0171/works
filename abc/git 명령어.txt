@@ -1,0 +1,90 @@
+
+기본 명령어
+---------------
+
+디렉토리 만들기
+- mkdir 디렉토리명
+
+디렉토리 들어가기
+- cd 디렉토리
+
+현재 디렉토리 확인
+- pwd
+
+디렉토리 내용 확인(윈도우의 경우)
+- dir
+
+
+Git 기본 명령어
+---------------
+
+Git 저장소로 만들기 : 해당 디렉토리 안에 관리하고자 하는 code들을 넣고 git으로 관리
+- git init
+
+Git 저장소 상태 확인 : 현재 브랜치의 이름과 추가, 변경된 파일 및 디렉토리 목록 확인
+- git status
+
+Git이 관리할 파일 지정 : git add를 하지 않으면 commit 시에 git에 반영이 되지 않는다.
+- git add .
+- git add 파일명.html
+
+변경사항 최종 저장 : add한 파일을 commit
+- git commit -m "커밋할 메시지 입력"
+
+사용자 setting : GitHub에 가입했던 ‘user name’과 ‘email’ 입력
+- git config --global user.name "jewelle80"
+- git config --global user.email "jewelle@naver.com"
+
+변경사항 파악 : commit 전에 마지막 버전 대비 변경된 내용만 확인가능
+- git diff
+
+
+Git branch 명령어
+---------------
+
+현재 branch 확인
+- git branch
+
+branch 생성
+- git branch 새로운_branch_명
+
+branch 변경
+- git checkout 변경하고자하는_branch_명
+
+merge branch
+- git merge 병합할_branch_명
+
+
+Git remote 명령어
+---------------
+
+로컬저장소와 remote 저장소(github/외부 서버) 연결
+- git remote add http://github.com/원격저장소 이름/원격저장소 주소.git		//https://github.com/jewelle80/mg-tb.git
+
+remote 저장소 버전 확인
+- git remote -v
+
+Git Clone – remote 저장소의 branch 그대로 로컬저장소에 가져오기
+- git clone 외부_repository_주소
+
+Git Push : remote 저장소에 정보 저장하기
+- git push remote 저장소주소 반영할_브랜치명
+
+Git Pull : 타인의 remote 저장소에 있는 내용을 나의 로컬 저장소에 불러오는것
+- git pull
+
+
+
+https://jewelle80.github.io/mg-tb/
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=euc-kr" %>
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/rui/script/jquery-1.11.3.min.js"></script>
+    <title>Document</title>
+    <style type="text/css">
+    .select_box + .select_box { margin-top: 20px; }
+    select { width: 200px; margin: 0; padding: 8px; border: 1px solid #dfe2e6; }
+    select.data { color: red; }
+    select option { color: #333; }
+    select option[data-hold="Y"] { color: red; }
+    /* select:invalid { color: red; } */
+    </style>
+    <script type="text/javascript">
+        $(function() {
+            $("select").change(function() {
+            	$(this).removeClass("data");
+            	
+            	if($(this).find("option:selected").attr("data-hold") == "Y"){
+            		$(this).addClass("data");
+            	}
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="box_type3">
+        <p class="title">카드선택</p>
+        <p class="txt">발급 받으실 카드를 선택해주세요.</p>
+        <div class="select_box">
+            <select name="" id="" >
+                <option value="">선택</option>
+                <option value="1" data-hold="Y">민영아 고생이 많다.</option>
+                <option value="">내맘알지?</option>
+                <option value="">항상 보고싶다</option>
+                <option value="" data-hold="Y">평생보자 우리♥♥♥</option>
+            </select>
+        </div>
+    </div>
+</body>
+</html>

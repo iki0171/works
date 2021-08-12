@@ -1,0 +1,41 @@
+ui.zIndex = 2000;
+
+
+function popupOn(p) {
+
+} 
+
+또는
+
+popupOn = (p) => {
+
+}
+
+또는
+
+popupOn = function(p){
+
+}
+
+또는
+
+ui.popupOn = p => { 
+    const t = p ? p : '.pop_wrap';
+    $(t).addClass('on').css({zIndex:ui.zIndex++});
+    ui.bodyScroll('on','layerpop');
+}
+
+
+---------------------------------------------------
+
+
+$('.btn_pop_close').on('click', e => {
+    ui.popupOff('#popup');
+    e.preventDefault();
+});
+
+또는
+
+$('.btn_pop_close').on('click'), function(e) {
+    
+}
