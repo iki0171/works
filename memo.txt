@@ -19,3 +19,24 @@ https://www.slideshare.net/yakuball/jquery-29167814?next_slideshow=1
 css flex(flexible box) 가이드
 https://heropy.blog/2018/11/24/css-flexible-box/
 https://heropy.blog/
+
+
+20210830
+
+부트스트랩
+https://eunyoe.tistory.com/61
+
+부트스트랩은 반응형을 지원하기 때문에 뷰포트태그를 추가시켜줍니다.
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+다음은 부트스트랩에서 가장 사용되는 그리드 레이아웃입니다.
+부트스트랩을 사용하려면 필요한 요소가 'container' 입니다. 상위 요소에 container 클래스를 지정해주세요.
+row는 콘텐츠영역이 될 'col-md-숫자' 를 감싸는 상위요소입니다.
+'col-md-숫자'는 콘텐츠 영역입니다. 여기서 '숫자'의 합이 12가 되도록 해주셔야 합니다.
+** row안에 들어가는 아이템의 col-md-숫자 값의 합은 12가 되어야합니다.
+
+모바일 : class="col-xs-숫자"
+태블릿 : class="col-sm-숫자"
+데스크톱 : class="col-md-숫자"
+더 큰 데스크톱 : class="col-lg-숫자"
+
